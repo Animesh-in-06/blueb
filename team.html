@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Byte Team</title>
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+:root{
+--primary:#81A6C6;
+--secondary:#AACDDC;
+--light:#F3E3D0;
+--soft:#D2C4B4;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+/* PAGE FADE ANIMATION */
+
+@keyframes fadeIn{
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+body{
+background:linear-gradient(120deg,#81A6C6,#AACDDC,#F3E3D0);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+animation:fadeIn 1.2s ease;
+}
+
+/* TEAM SECTION */
+
+.team-container{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* CARD */
+
+.team-card{
+width:260px;
+padding:30px;
+text-align:center;
+border-radius:20px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(12px);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+transition:0.4s;
+animation:fadeIn 1.5s ease;
+}
+
+.team-card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* IMAGE */
+
+.team-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:3px solid white;
+}
+
+.team-card h3{
+margin:10px 0;
+color:#333;
+}
+
+.team-card p{
+color:#444;
+}
+
+/* SOCIAL ICONS */
+
+.social{
+margin-top:15px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.social a{
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:white;
+text-decoration:none;
+font-size:18px;
+color:#333;
+transition:0.3s;
+}
+
+.social a:hover{
+background:var(--primary);
+color:white;
+transform:scale(1.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="team-container">
+
+<!-- MEMBER 1 -->
+
+<div class="team-card">
+
+<img src="https://i.pravatar.cc/150?img=5">
+
+<h3>Anish</h3>
+<p>Developer</p>
+
+<div class="social">
+
+<a href="mailto:yourgmail@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://linkedin.com" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="https://github.com" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+</div>
+
+</div>
+
+<!-- MEMBER 2 -->
+
+<div class="team-card">
+
+<img src="https://i.pravatar.cc/150?img=8">
+
+<h3>Animesh</h3>
+<p>Frontend Developer</p>
+
+<div class="social">
+
+<a href="mailto:yourgmail@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://linkedin.com/in/animesh-sakharkar-27b0b4397" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="https://github.com" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+<button onclick="window.location.href='index.html'" style="position:absolute; top:20px; left:20px; padding:10px 18px; border:none; border-radius:20px; background:#81A6C6; color:white; font-size:16px; cursor:pointer;">
+← Back
+</button>
+</body>
+</html>

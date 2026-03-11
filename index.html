@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Byte - Website Development</title>
+
+<style>
+
+/* COLOR THEME */
+:root{
+--primary:#81A6C6;
+--secondary:#AACDDC;
+--light:#F3E3D0;
+--soft:#D2C4B4;
+}
+
+/* GENERAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background: linear-gradient(120deg,#81A6C6,#AACDDC,#F3E3D0);
+background-size:400% 400%;
+animation: gradientMove 12s ease infinite;
+color:#333;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+section{
+padding:80px 10%;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+backdrop-filter: blur(12px);
+background:rgba(255,255,255,0.2);
+}
+
+nav h2{
+color:white;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* GLASS CARD */
+
+.glass{
+background: rgba(255,255,255,0.2);
+border-radius:20px;
+backdrop-filter: blur(12px);
+padding:30px;
+box-shadow:0 8px 30px rgba(0,0,0,0.1);
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+margin-top:80px;
+}
+
+.hero h1{
+font-size:55px;
+color:white;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:600px;
+color:white;
+margin-bottom:30px;
+}
+
+/* BUTTON */
+
+.btn{
+padding:14px 35px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#81A6C6,#AACDDC);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.service-card{
+transition:0.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+/* TEAM */
+
+/* .team{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+text-align:center;
+}
+
+.team img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:15px;
+} */
+
+/* CONTACT */
+
+.contact form{
+display:grid;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:none;
+}
+
+/* REGISTER */
+
+.register form{
+display:grid;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:white;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h2>Blue Byte</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="/team.html">Team</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+<h1>Blue Byte</h1>
+<p>We design and develop modern, high-performance websites for businesses worldwide.</p>
+<button class="btn">Start Your Project</button>
+</section>
+
+<!-- INFO -->
+
+<section id="info">
+<div class="glass">
+<h2>About Blue Byte</h2>
+<p>
+this is created with ai bya aishwarya didi
+</p>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<!-- <section id="services">
+
+<h2 style="text-align:center;color:white;">Our Services</h2>
+
+<div class="services">
+
+<div class="glass service-card">
+<h3>Website Development</h3>
+<p>Modern responsive websites built with the latest technology.</p>
+</div>
+
+<div class="glass service-card">
+<h3>UI / UX Design</h3>
+<p>Clean, minimal and beautiful user interface design.</p>
+</div>
+
+<div class="glass service-card">
+<h3>Website Animation</h3>
+<p>Interactive animations and smooth website transitions.</p>
+</div>
+
+<div class="glass service-card">
+<h3>SEO Optimization</h3>
+<p>Improve your ranking and reach more customers.</p>
+</div>
+
+</div>
+
+</section> -->
+
+<!-- TEAM -->
+<!-- 
+<section id="team">
+
+<h2 style="text-align:center;color:white;">Our Team</h2>
+
+<div class="team">
+
+<div class="glass">
+<img src="https://i.pravatar.cc/150?img=1">
+<h3>Alex</h3>
+<p>Frontend Developer</p>
+</div>
+
+<div class="glass">
+<img src="https://i.pravatar.cc/150?img=2">
+<h3>Sarah</h3>
+<p>UI Designer</p>
+</div>
+
+<div class="glass">
+<img src="https://i.pravatar.cc/150?img=3">
+<h3>Michael</h3>
+<p>Backend Developer</p>
+</div>
+
+</div>
+
+</section> -->
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2 style="text-align:center;color:white;">Contact Us</h2>
+
+<div class="glass">
+
+<form>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- REGISTER -->
+
+<section class="register">
+
+<h2 style="text-align:center;color:white;">Register</h2>
+
+<div class="glass">
+
+<form>
+
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<button class="btn">Register</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Blue Byte — Website Development Company
+</footer>
+
+</body>
+</html>

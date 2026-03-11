@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Blue Byte</title>
+
+<style>
+
+:root{
+--primary:#81A6C6;
+--secondary:#AACDDC;
+--light:#F3E3D0;
+--soft:#D2C4B4;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+/* PAGE BACKGROUND */
+
+body{
+background:linear-gradient(120deg,#81A6C6,#AACDDC,#F3E3D0);
+min-height:100vh;
+padding:60px 10%;
+animation:fadePage 1.2s ease;
+}
+
+/* PAGE ANIMATION */
+
+@keyframes fadePage{
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* HEADINGS */
+
+h1{
+text-align:center;
+color:white;
+margin-bottom:40px;
+font-size:40px;
+}
+
+/* GLASS CARD */
+
+.glass{
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(12px);
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+margin-bottom:60px;
+}
+
+.service-card{
+transition:0.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* PRICING */
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.price-card{
+text-align:center;
+transition:0.4s;
+}
+
+.price-card:hover{
+transform:translateY(-10px);
+}
+
+.price{
+font-size:30px;
+margin:15px 0;
+color:#333;
+}
+
+/* BUTTON */
+
+.btn{
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#81A6C6,#AACDDC);
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>About Blue Byte</h1>
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<div class="glass service-card">
+<h2>Website Development</h2>
+<p>
+We build modern, responsive and high performance websites for businesses.
+Our websites are optimized for speed, design and user experience.
+</p>
+</div>
+
+<div class="glass service-card">
+<h2>UI / UX Design</h2>
+<p>
+Our design team creates beautiful and intuitive interfaces that improve
+customer engagement and make your brand stand out online.
+</p>
+</div>
+
+<div class="glass service-card">
+<h2>Web Applications</h2>
+<p>
+We develop advanced web applications using modern technologies to help
+businesses automate and scale their digital operations.
+</p>
+</div>
+
+<div class="glass service-card">
+<h2>SEO Optimization</h2>
+<p>
+Improve your website ranking on search engines and reach more customers
+with our SEO optimization services.
+</p>
+</div>
+
+</section>
+
+
+<h1>Pricing</h1>
+
+<!-- PRICING -->
+
+<section class="pricing">
+
+<div class="glass price-card">
+
+<h2>Basic Website</h2>
+
+<div class="price">$50</div>
+
+<p>Simple website</p>
+<p>3 Pages</p>
+<p>Responsive Design</p>
+
+<br>
+
+<button class="btn">Get Started</button>
+
+</div>
+
+
+<div class="glass price-card">
+
+<h2>Business Website</h2>
+
+<div class="price">$120</div>
+
+<p>Professional design</p>
+<p>6 Pages</p>
+<p>Animations</p>
+
+<br>
+
+<button class="btn">Get Started</button>
+
+</div>
+
+
+<div class="glass price-card">
+
+<h2>Premium Website</h2>
+
+<div class="price">$250</div>
+
+<p>Full custom website</p>
+<p>Unlimited pages</p>
+<p>Advanced animations</p>
+
+<br>
+
+<button class="btn">Get Started</button>
+
+</div>
+
+</section>
+<button onclick="window.location.href='index.html'" style="position:absolute; top:20px; left:20px; padding:10px 18px; border:none; border-radius:20px; background:#81A6C6; color:white; font-size:16px; cursor:pointer;">
+← Back
+</button>
+</body>
+</html>
